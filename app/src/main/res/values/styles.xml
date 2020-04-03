@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:navigationIcon">@drawable/ic_left_black</item>
+    </style>
+
+    <style name="GlobalMargin">
+        <item name="android:layout_marginLeft">31dp</item>
+        <item name="android:layout_marginRight">31dp</item>
+    </style>
+    <style name="text_red">
+        <item name="android:textColor">@color/text_red</item>
+    </style>
+
+    <style name="text_gray">
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+
+    <style name="RedButton" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">20dp</item>
+        <item name="backgroundTint">@color/button_red</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <style name="RedButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">20dp</item>
+        <item name="strokeColor">@color/button_red</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/text_red</item>
+    </style>
+
+    <style name="WhiteButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeColor">@color/button_blue_stroke</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+</resources>

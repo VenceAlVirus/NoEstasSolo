@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NoEstasSolo.iml" filepath="$PROJECT_DIR$/NoEstasSolo.iml" group="NoEstasSolo" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="NoEstasSolo/app" />
+    </modules>
+  </component>
+</project>

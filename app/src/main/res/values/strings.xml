@@ -45,4 +45,25 @@
     <string name="wellcome_text">Aquí compartiremos las valoraciones de accesibilidad de los edificios que nos rodean. \n \n   Además de esto, ¿has llegado aquí a través de algún grupo? Si es así, es posible que te hayan dado un código de acceso.</string>
     <string name="have_a_code">Tengo un código</string>
     <string name="see_groups">Ver grupos</string>
+
+
+    <string name="loremp_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla, ligula feugiat scelerisque lacinia, libero ipsum tincidunt augue, in posuere enim erat id libero. Duis ultricies orci vitae orci bibendum feugiat. Nunc malesuada, velit eu interdum efficitur, purus eros euismod ipsum, a ultrices massa diam vitae lectus. Aliquam sed tincidunt est. Proin sit amet risus tincidunt, commodo enim ac, euismod mauris. Etiam vel nisi lacinia, hendrerit sapien non, pulvinar tortor. Morbi sit amet orci id orci laoreet tristique in eu massa. Nunc vestibulum interdum nibh, quis pellentesque libero sagittis at. Aliquam cursus tincidunt aliquam. Etiam vulputate metus ut lacus congue dapibus. Sed gravida congue libero, vitae vulputate diam venenatis ac. Sed pulvinar gravida lacinia.</string>
+
+    <!-- onBoarding -->
+    <string name="onboarding_button_start">Comenzar</string>
+
+    <string name="onboarding_title1">Title 1</string>
+    <string name="onboarding_title2">Title 2</string>
+    <string name="onboarding_title3">Title 3</string>
+    <string name="onboarding_title4">Title 4</string>
+    <string name="onboarding_title5">Title 5</string>
+
+    <string name="onboarding_desc1">Description 1</string>
+    <string name="onboarding_desc2">Description 2</string>
+    <string name="onboarding_desc3">Description 3</string>
+    <string name="onboarding_desc4">Description 4</string>
+    <string name="onboarding_desc5">Description 5</string>
+
+
+
 </resources>

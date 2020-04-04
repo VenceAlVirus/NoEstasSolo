@@ -17,4 +17,8 @@
     <color name="button_red">#BD1242</color>
     <color name="button_blue_stroke">#8044779F</color>
 
+    <!--profile-->
+    <color name="profile_background">#EAEAEA</color>
+
+
 </resources>

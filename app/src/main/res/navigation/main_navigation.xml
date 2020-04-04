@@ -4,12 +4,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/newsFragment">
+    app:startDestination="@id/perfilFragment">
 
     <fragment
         android:id="@+id/newsFragment"
         android:label="NewsFragment"
-        android:name="com.talentoMobile.noEstasSolo.features.news.views.NewsFragments"
+        android:name="com.talentoMobile.noEstasSolo.features.news.views.PerfilFragment"
         tools:layout="@layout/fragment_news"/>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.perfil.views.ProfileFragment"
+        android:label="PerfilFragment" >
+        <action
+            android:id="@+id/action_perfilFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.perfil.views.EditProfileFragment"
+        android:label="EditProfileFragment" />
 
 </navigation>

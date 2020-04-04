@@ -45,4 +45,23 @@
     <string name="wellcome_text">Aquí compartiremos las valoraciones de accesibilidad de los edificios que nos rodean. \n \n   Además de esto, ¿has llegado aquí a través de algún grupo? Si es así, es posible que te hayan dado un código de acceso.</string>
     <string name="have_a_code">Tengo un código</string>
     <string name="see_groups">Ver grupos</string>
+
+
+    <!-- onBoarding -->
+    <string name="onboarding_button_start">Comenzar</string>
+
+    <string name="onboarding_title1">Title 1</string>
+    <string name="onboarding_title2">Title 2</string>
+    <string name="onboarding_title3">Title 3</string>
+    <string name="onboarding_title4">Title 4</string>
+    <string name="onboarding_title5">Title 5</string>
+
+    <string name="onboarding_desc1">Description 1</string>
+    <string name="onboarding_desc2">Description 2</string>
+    <string name="onboarding_desc3">Description 3</string>
+    <string name="onboarding_desc4">Description 4</string>
+    <string name="onboarding_desc5">Description 5</string>
+
+
+
 </resources>

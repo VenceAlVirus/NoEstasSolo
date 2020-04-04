@@ -14,6 +14,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_left_black"
+        android:gravity="center"
         app:titleTextColor="@color/text_red"/>
 
     <fragment

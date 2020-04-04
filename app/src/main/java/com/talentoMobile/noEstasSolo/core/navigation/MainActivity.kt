@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity(), PopUpDelegator {
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
             toolbar.title = when (destination.id) {
+                R.id.offerAndDemandFragment -> "Oferta y demanda"
+                R.id.newsFragment -> "Noticias"
                 else -> ""
             }
             toolbar.visibility = when (destination.id) {

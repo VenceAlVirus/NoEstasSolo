@@ -132,4 +132,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.3.0'
     implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
 
+    // Lorem
+    implementation 'com.thedeanda:lorem:2.1'
+
+    // Google Maps
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
 }

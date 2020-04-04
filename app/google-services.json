@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "591715789989",
+    "firebase_url": "https://noestassolo-dd838.firebaseio.com",
+    "project_id": "noestassolo-dd838",
+    "storage_bucket": "noestassolo-dd838.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591715789989:android:17e4f66381176dcb10714c",
+        "android_client_info": {
+          "package_name": "com.talentomobile.noEstasSolo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591715789989-2dnc5icg81n34ut1ger4rcarheiioo1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhEWUPlW-uOqSMD3kETMIpxV1NWvkNV-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591715789989-2dnc5icg81n34ut1ger4rcarheiioo1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

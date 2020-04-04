@@ -2,20 +2,20 @@ package com.davidups.starwars.features.people
 
 import android.content.Context
 import com.davidups.starwars.UnitTest
-import com.davidups.starwars.core.exception.Failure
+import com.talentoMobile.noEstasSolo.core.exception.Failure
 import com.davidups.starwars.core.functional.Either
-import com.davidups.starwars.core.platform.NetworkHandler
+import com.talentoMobile.noEstasSolo.core.platform.NetworkHandler
 import com.davidups.starwars.features.people.models.People
 import com.davidups.starwars.features.people.models.PeopleEntity
 import com.davidups.starwars.features.people.models.Person
-import com.davidups.starwars.features.people.models.PersonEntity
-import com.davidups.starwars.features.people.services.PeopleLocal
-import com.davidups.starwars.features.people.services.PeopleService
-import com.davidups.starwars.features.people.usecases.PeopleRepository
+import com.talentoMobile.noEstasSolo.features.people.models.PersonEntity
+import com.talentoMobile.noEstasSolo.features.people.services.PeopleLocal
+import com.talentoMobile.noEstasSolo.features.people.services.PeopleService
+import com.talentoMobile.noEstasSolo.features.people.usecases.PeopleRepository
 import com.nhaarman.mockito_kotlin.given
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.verifyZeroInteractions
-import com.talentoMobile.fundacionMutuaDePropietarios.features.fetch.services.FetchLocal
+import com.talentoMobile.noEstasSolo.features.fetch.services.FetchLocal
 import io.kotlintest.matchers.shouldEqual
 import org.amshove.kluent.shouldBeInstanceOf
 import org.junit.Before

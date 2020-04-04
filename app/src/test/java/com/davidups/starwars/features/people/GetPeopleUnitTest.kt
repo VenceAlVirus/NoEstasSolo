@@ -2,10 +2,10 @@ package com.davidups.starwars.features.people
 
 import com.davidups.starwars.UnitTest
 import com.davidups.starwars.core.functional.Either
-import com.davidups.starwars.core.interactor.UseCase
+import com.talentoMobile.noEstasSolo.core.interactor.UseCase
 import com.davidups.starwars.features.people.models.Person
-import com.davidups.starwars.features.people.usecases.GetPeople
-import com.davidups.starwars.features.people.usecases.PeopleRepository
+import com.talentoMobile.noEstasSolo.features.people.usecases.GetPeople
+import com.talentoMobile.noEstasSolo.features.people.usecases.PeopleRepository
 import com.nhaarman.mockito_kotlin.given
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.verifyNoMoreInteractions

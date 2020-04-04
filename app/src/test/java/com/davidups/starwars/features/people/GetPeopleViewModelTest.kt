@@ -2,13 +2,10 @@ package com.davidups.starwars.features.people
 
 import com.davidups.starwars.AndroidTest
 import com.davidups.starwars.core.functional.Either.Right
-import com.davidups.starwars.core.interactor.UseCase.None
-import com.davidups.starwars.features.people.models.People
+import com.talentoMobile.noEstasSolo.core.interactor.UseCase.None
 import com.davidups.starwars.features.people.models.Person
-import com.davidups.starwars.features.people.usecases.GetPeople
-import com.davidups.starwars.features.people.views.PersonView
-import com.davidups.starwars.features.people.views.viewmodels.GetPeopleViewModel
-import com.nhaarman.mockito_kotlin.any
+import com.talentoMobile.noEstasSolo.features.people.usecases.GetPeople
+import com.talentoMobile.noEstasSolo.features.people.views.viewmodels.GetPeopleViewModel
 import com.nhaarman.mockito_kotlin.eq
 import com.nhaarman.mockito_kotlin.given
 import kotlinx.coroutines.runBlocking
@@ -18,7 +15,6 @@ import org.amshove.kluent.shouldNotBeEqualTo
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import kotlin.test.assertEquals
 
 class GetPeopleViewModelTest : AndroidTest() {
 

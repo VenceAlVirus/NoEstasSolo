@@ -3,18 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-<<<<<<< HEAD
     app:startDestination="@id/perfilFragment">
 
     <fragment
-        android:id="@+id/newsFragment"
-        android:label="NewsFragment"
-        android:name="com.talentoMobile.noEstasSolo.features.news.views.PerfilFragment"
-        tools:layout="@layout/fragment_news"/>
-    <fragment
         android:id="@+id/perfilFragment"
         android:name="com.talentoMobile.noEstasSolo.features.perfil.views.ProfileFragment"
-        android:label="PerfilFragment" >
+        android:label="PerfilFragment">
         <action
             android:id="@+id/action_perfilFragment_to_editProfileFragment"
             app:destination="@id/editProfileFragment" />
@@ -23,8 +17,6 @@
         android:id="@+id/editProfileFragment"
         android:name="com.talentoMobile.noEstasSolo.features.perfil.views.EditProfileFragment"
         android:label="EditProfileFragment" />
-=======
-    app:startDestination="@id/onBoardingFragment">
 
     <fragment
         android:id="@+id/offerAndDemandFragment"
@@ -95,6 +87,5 @@
         android:name="com.talentoMobile.noEstasSolo.features.chat.views.fragments.ChatFragment"
         android:label="ChatFragment"
         tools:layout="@layout/fragment_chat" />
->>>>>>> develop
 
 </navigation>

@@ -5,6 +5,8 @@
     <dimen name="text_size_22">22sp</dimen>
     <dimen name="text_size_20">20sp</dimen>
     <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+
 
     <!--onBoarding-->
     <dimen name="pager_dot_size">8dp</dimen>

@@ -52,8 +52,9 @@
     </fragment>
 
     <fragment
-        android:id="@+id/newFragment"
-        android:name="com.talentoMobile.noEstasSolo.features.news.views.NewDetailFragment"
-        android:label="NewFragment"
-        tools:layout="@layout/fragment_new_detail" />
+        android:id="@+id/onBoardingFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.onboarding.OnBoardingFragment"
+        android:label="OnBoardingFragment" />
+
+
 </navigation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llCountDots" />
+
+    <LinearLayout
+        android:id="@+id/llCountDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pager_dot_height"
+        android:layout_above="@+id/llFooter"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/llFooter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnStart"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/button_footer_width"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="@string/onboarding_button_start"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

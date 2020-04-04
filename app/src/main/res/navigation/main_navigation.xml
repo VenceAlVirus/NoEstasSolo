@@ -10,6 +10,16 @@
         android:id="@+id/newsFragment"
         android:label="NewsFragment"
         android:name="com.talentoMobile.noEstasSolo.features.news.views.NewsFragments"
-        tools:layout="@layout/fragment_news"/>
+        tools:layout="@layout/fragment_news">
 
+        <action
+            android:id="@+id/action_newsFragment_to_newFragment"
+            app:destination="@id/newFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newFragment"
+        android:label="NewFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.news.views.NewDetailFragment"
+        tools:layout="@layout/fragment_new_detail"/>
 </navigation>

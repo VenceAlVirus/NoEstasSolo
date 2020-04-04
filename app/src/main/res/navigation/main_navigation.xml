@@ -40,6 +40,7 @@
         android:label="ProductDetail"
         tools:layout="@layout/fragment_product_detail_fragment" />
 
+
     <fragment
         android:id="@+id/newsFragment"
         android:name="com.talentoMobile.noEstasSolo.features.news.views.NewsFragments"
@@ -56,5 +57,22 @@
         android:name="com.talentoMobile.noEstasSolo.features.onboarding.OnBoardingFragment"
         android:label="OnBoardingFragment" />
 
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.messages.views.fragments.MessagesFragment"
+        android:label="MessagesFragment"
+        tools:layout="@layout/fragment_messages">
+
+        <action
+            android:id="@+id/action_messagesFragment_to_messageChatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.chat.views.fragments.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat" />
 
 </navigation>

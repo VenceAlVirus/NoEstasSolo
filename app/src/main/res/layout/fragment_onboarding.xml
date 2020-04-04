@@ -29,17 +29,16 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <Button
+
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnStart"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="@dimen/button_footer_width"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimary"
-            android:text="@string/onboarding_button_start"
-            android:textAllCaps="false"
-            android:textColor="@color/text_white"
-            android:textSize="@dimen/text_size_18"
-            android:visibility="visible" />
+            style="@style/button.red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/onboarding_button_start" />
 
 
     </LinearLayout>

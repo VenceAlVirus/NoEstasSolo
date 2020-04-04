@@ -45,7 +45,7 @@ class OnBoardingFragment : BaseFragment() {
         val navBuilder = NavOptions.Builder()
         val navOptions = navBuilder.setPopUpTo(R.id.main_navigation, true).build()
         NavHostFragment.findNavController(this@OnBoardingFragment)
-            .navigate(R.id.newsFragment, null, navOptions)
+            .navigate(R.id.offerAndDemandFragment, null, navOptions)
     }
 
     //TO ViewModel

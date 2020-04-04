@@ -56,6 +56,10 @@
         <item name="android:textColor">@color/text_gray</item>
     </style>
 
+    <style name="text.text_green">
+        <item name="android:textColor">@color/text_green</item>
+    </style>
+
     <style name="text.text_gray.blod">
         <item name="android:textStyle">bold</item>
     </style>
@@ -97,5 +101,15 @@
     <style name="autoAdjustImageView">
         <item name="android:adjustViewBounds">true</item>
         <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="textHeader" parent="text.text_red">
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textMenu" parent="text.text_green">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

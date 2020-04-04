@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NoEstasSolo.iml" filepath="$PROJECT_DIR$/NoEstasSolo.iml" group="NoEstasSolo" />
-      <module fileurl="file://$PROJECT_DIR$/app/NoEstasSolo-app.iml" filepath="$PROJECT_DIR$/app/NoEstasSolo-app.iml" group="NoEstasSolo/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="NoEstasSolo/app" />
     </modules>
   </component>

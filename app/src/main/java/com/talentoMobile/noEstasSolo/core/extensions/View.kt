@@ -13,6 +13,7 @@ import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestListener
+import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.BaseTarget
 import com.bumptech.glide.request.target.SizeReadyCallback
 import com.bumptech.glide.request.target.Target
@@ -41,6 +42,14 @@ fun ImageView.loadFromUrl(url: String) =
 internal infix fun View.onClick(function: () -> Unit) {
     setOnClickListener { function() }
 }
+
+fun ImageView.loadFromUrlCircle(url: String) =
+    Glide.with(this.context.applicationContext)
+        .load(url)
+        .apply(RequestOptions.circleCropTransform())
+        .transition(DrawableTransitionOptions.withCrossFade())
+        .into(this)
+
 
 fun ImageView.loadFromDrawable(drawable: Int) {
 

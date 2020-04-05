@@ -38,6 +38,8 @@ class MainActivity : AppCompatActivity(), PopUpDelegator {
 
             bottom_navigation.visibility = when (destination.id) {
                 R.id.onBoardingFragment -> View.GONE
+                R.id.productDetail -> View.GONE
+                R.id.newFragment -> View.GONE
                 else -> View.VISIBLE
             }
             //Controlamos que al cambiar de fragment no siga nuestro progress activo

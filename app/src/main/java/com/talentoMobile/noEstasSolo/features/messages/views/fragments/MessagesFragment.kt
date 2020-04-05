@@ -13,8 +13,5 @@ class MessagesFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        item.setOnClickListener {
-            //view.findNavController().navigate(R.id.action_messagesFragment_to_messageChatFragment) ¿?
-        }
     }
 }

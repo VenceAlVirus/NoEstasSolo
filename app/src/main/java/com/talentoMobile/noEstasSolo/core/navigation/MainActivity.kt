@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity(), PopUpDelegator {
         }
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
+
             toolbar.title = when (destination.id) {
                 R.id.offerAndDemandFragment -> "Oferta y demanda"
                 R.id.newsFragment -> "Noticias"
@@ -40,6 +41,12 @@ class MainActivity : AppCompatActivity(), PopUpDelegator {
                 R.id.onBoardingFragment -> View.GONE
                 else -> View.VISIBLE
             }
+
+            toolbar.visibility = when (destination.id) {
+                R.id.onBoardingFragment -> View.GONE
+                else -> View.VISIBLE
+            }
+
             //Controlamos que al cambiar de fragment no siga nuestro progress activo
             if (progress.visibility == View.VISIBLE) progress.visibility = View.GONE
 
@@ -76,6 +83,7 @@ class MainActivity : AppCompatActivity(), PopUpDelegator {
     fun toolbarText(text: String) {
         toolbar.title = text
     }
+
 
     override fun showErrorWithRetry(
         title: String,

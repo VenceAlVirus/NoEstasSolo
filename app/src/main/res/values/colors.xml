@@ -15,13 +15,16 @@
     <color name="text_white">#FFFFFF</color>
     <color name="text_green">#84A085</color>
 
-
     <color name="button_red">#BD1242</color>
     <color name="button_blue_stroke">#8044779F</color>
+    <color name="button_green">#7CB297</color>
 
+    <color name="dot_selected">#45779F</color>
+    <color name="dot">#FFFCFC</color>
+
+    <color name="onBoardingBackground">#FFFDFD</color>
 
     <!--profile-->
     <color name="profile_background">#EAEAEA</color>
-
 
 </resources>

@@ -65,13 +65,18 @@
     </style>
 
     <style name="button">
-        <item name="android:height">52dp</item>
-        <item name="cornerRadius">20dp</item>
+        <item name="android:height">@dimen/size_52</item>
+        <item name="cornerRadius">@dimen/size_20</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
     <style name="button.red">
-        <item name="backgroundTintMode">@color/button_red</item>
+        <item name="backgroundTint">@color/button_red</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <style name="button.green">
+        <item name="backgroundTint">@color/button_green</item>
         <item name="android:textColor">@color/text_white</item>
     </style>
 
@@ -79,7 +84,7 @@
         <item name="android:height">52dp</item>
         <item name="cornerRadius">20dp</item>
         <item name="android:textAllCaps">false</item>
-        <item name="backgroundTintMode">@color/button_blue_stroke</item>
+        <item name="backgroundTint">@color/button_blue_stroke</item>
         <item name="android:textColor">@color/text_white</item>
     </style>
 
@@ -98,13 +103,19 @@
         <item name="android:textColor">@color/text_gray</item>
     </style>
 
+
     <style name="autoAdjustImageView">
         <item name="android:adjustViewBounds">true</item>
         <item name="android:scaleType">center</item>
     </style>
 
-    <style name="textHeader" parent="text.text_red">
-        <item name="android:textSize">@dimen/text_size_20</item>
+    <style name="textHeader" parent="text.text_gray">
+        <item name="android:textSize">@dimen/text_size_25</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textDetail" parent="text.text_gray">
+        <item name="android:textSize">@dimen/text_size_16</item>
         <item name="android:textStyle">bold</item>
     </style>
 

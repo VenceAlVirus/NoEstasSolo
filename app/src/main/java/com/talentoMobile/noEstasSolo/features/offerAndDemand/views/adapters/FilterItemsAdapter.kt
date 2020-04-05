@@ -1,17 +1,13 @@
 package com.talentoMobile.noEstasSolo.features.offerAndDemand.views.adapters
 
-import android.content.SharedPreferences
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.davidups.starwars.core.extensions.inflate
-import com.davidups.starwars.core.extensions.loadFromUrlCircle
-import com.davidups.starwars.core.extensions.randomImage
+import com.talentoMobile.noEstasSolo.core.extensions.inflate
+import com.talentoMobile.noEstasSolo.core.extensions.loadFromUrlCircle
 import com.talentoMobile.noEstasSolo.R
 import com.talentoMobile.noEstasSolo.features.offerAndDemand.models.FilterItem
 import kotlinx.android.synthetic.main.item_filter_row.view.*
-import org.koin.core.KoinComponent
-import org.koin.core.inject
 import kotlin.properties.Delegates
 
 class FilterItemsAdapter : RecyclerView.Adapter<FilterItemsAdapter.ViewHolder>() {

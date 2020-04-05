@@ -23,29 +23,29 @@
 
         <action
             android:id="@+id/action_offerAndDemandFragment_to_OfferFragment"
-            app:destination="@id/OfferFragment" />
+            app:destination="@id/offerFragment" />
         <action
             android:id="@+id/action_offerAndDemandFragment_to_NeededFragment"
-            app:destination="@id/NeededFragment" />
+            app:destination="@id/neededFragment" />
         <action
             android:id="@+id/action_offerAndDemandFragment_to_ProductDetail"
-            app:destination="@id/ProductDetail" />
+            app:destination="@id/productDetail" />
     </fragment>
 
     <fragment
-        android:id="@+id/NeededFragment"
+        android:id="@+id/neededFragment"
         android:name="com.talentoMobile.noEstasSolo.features.offerAndDemand.views.NeededFragment"
         android:label="NeededFragment"
         tools:layout="@layout/fragment_needed" />
 
     <fragment
-        android:id="@+id/OfferFragment"
+        android:id="@+id/offerFragment"
         android:name="com.talentoMobile.noEstasSolo.features.offerAndDemand.views.OfferFragment"
         android:label="OfferFragment"
         tools:layout="@layout/fragment_offer" />
 
     <fragment
-        android:id="@+id/ProductDetail"
+        android:id="@+id/productDetail"
         android:name="com.talentoMobile.noEstasSolo.features.offerAndDemand.views.ProductDetailFragment"
         android:label="ProductDetail"
         tools:layout="@layout/fragment_product_detail_fragment" />

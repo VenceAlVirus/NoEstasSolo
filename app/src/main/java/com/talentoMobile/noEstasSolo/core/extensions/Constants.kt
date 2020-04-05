@@ -5,6 +5,7 @@ class Constants {
     companion object {
         val LOG_ERROR_TAG = "Error"
         const val PRODUCT = "product"
+        const val NEW = "new"
     }
 
     class Person {

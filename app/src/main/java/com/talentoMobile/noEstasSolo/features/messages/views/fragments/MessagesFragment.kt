@@ -3,11 +3,12 @@ package com.talentoMobile.noEstasSolo.features.messages.views.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.navigation.findNavController
-import com.davidups.starwars.core.extensions.loadFromUrlCircle
 import com.davidups.starwars.core.extensions.randomImage
 import com.talentoMobile.noEstasSolo.R
+import com.talentoMobile.noEstasSolo.core.extensions.loadFromUrlCircle
 import com.talentoMobile.noEstasSolo.core.platform.BaseFragment
 import kotlinx.android.synthetic.main.fragment_messages.*
+import kotlinx.android.synthetic.main.item_message_row.view.*
 import kotlinx.android.synthetic.main.item_new_row.view.*
 
 class MessagesFragment : BaseFragment() {

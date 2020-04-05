@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/onBoardingFragment">
+    app:startDestination="@id/newsFragment">
 
     <fragment
         android:id="@+id/onBoardingFragment"
@@ -68,16 +68,27 @@
         android:label="NewFragment"
         tools:layout="@layout/fragment_new_detail" />
 
-    <fragment android:id="@+id/mapFragment"
+    <fragment
+        android:id="@+id/mapFragment"
         android:name="com.talentoMobile.noEstasSolo.features.maps.view.MapFragment"
         android:label="MapFragment"
-        tools:layout="@layout/fragment_map"/>
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.messages.views.fragments.MessagesFragment"
+        android:label="MessagesFragment"
+        tools:layout="@layout/fragment_messages">
+        <action
+            android:id="@+id/action_messagesFragment_to_messageChatFragment"
+            app:destination="@+id/chatsFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/chatsFragment"
         android:name="com.talentoMobile.noEstasSolo.features.chat.views.fragments.ChatFragment"
         android:label="ChatFragment"
-        tools:layout="@layout/fragment_chat"/>
+        tools:layout="@layout/fragment_chat" />
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.talentoMobile.noEstasSolo.features.perfil.views.ProfileFragment"
@@ -92,25 +103,25 @@
         android:id="@+id/editProfileFragment"
         android:name="com.talentoMobile.noEstasSolo.features.perfil.views.EditProfileFragment"
         android:label="EditProfileFragment"
-        tools:layout="@layout/fragment_edit_profile"/>
+        tools:layout="@layout/fragment_edit_profile" />
 
     <action
         android:id="@+id/action_main_to_offer_and_needed"
-        app:destination="@id/offerAndDemandFragment"/>
+        app:destination="@id/offerAndDemandFragment" />
 
     <action
         android:id="@+id/action_main_to_map"
-        app:destination="@id/mapFragment"/>
+        app:destination="@id/mapFragment" />
 
     <action
         android:id="@+id/action_main_to_news"
-        app:destination="@id/newsFragment"/>
+        app:destination="@id/newsFragment" />
 
     <action
-        android:id="@+id/action_main_to_chats"
-        app:destination="@id/chatsFragment"/>
+        android:id="@+id/action_main_to_messages"
+        app:destination="@id/messagesFragment" />
 
     <action
         android:id="@+id/action_main_to_profile"
-        app:destination="@id/profileFragment"/>
+        app:destination="@id/profileFragment" />
 </navigation>

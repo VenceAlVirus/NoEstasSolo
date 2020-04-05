@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity(), PopUpDelegator {
             toolbar.title = when (destination.id) {
                 R.id.offerAndDemandFragment -> "Oferta y demanda"
                 R.id.newsFragment -> "Noticias"
+                R.id.messagesFragment -> "Mensajes"
                 else -> ""
             }
             toolbar.visibility = when (destination.id) {
@@ -38,6 +39,8 @@ class MainActivity : AppCompatActivity(), PopUpDelegator {
 
             bottom_navigation.visibility = when (destination.id) {
                 R.id.onBoardingFragment -> View.GONE
+                R.id.chatsFragment -> View.GONE
+                R.id.newFragment -> View.GONE
                 else -> View.VISIBLE
             }
             //Controlamos que al cambiar de fragment no siga nuestro progress activo
@@ -61,7 +64,7 @@ class MainActivity : AppCompatActivity(), PopUpDelegator {
                 }
 
                 R.id.btnSpecialist -> {
-                    navController.navigate(R.id.action_main_to_chats)
+                    navController.navigate(R.id.action_main_to_messages)
                     true
                 }
                 R.id.btnProfile -> {

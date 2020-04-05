@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/item"
-        layout="@layout/item_new_row_simple"
+        layout="@layout/item_message_row"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -20,7 +20,7 @@
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="05/04/2020"
+        android:text="19 de abril de 2020"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/item" />
@@ -64,15 +64,17 @@
         <EditText
             android:id="@+id/editText"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
             android:layout_weight="2"
-            android:gravity="center"
-            android:hint="Escribir"
+            android:background="@drawable/message_input"
+            android:hint="Escribe algo"
             android:inputType="text"
-            android:paddingHorizontal="10dp"
+            android:padding="10dp"
             android:text="" />
 
         <TextView
+            style="@style/text.text_green.bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

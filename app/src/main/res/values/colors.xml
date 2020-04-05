@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#BD1242</color>
-    <color name="colorPrimaryDark">#871031</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#6CA385</color>
+    <color name="colorPrimaryDark">#5D8D73</color>
+    <color name="colorAccent">#009688</color>
 
     <color name="translucentBackground">#72000000</color>
     <color name="progressBar">#3f51b5</color>
@@ -16,6 +16,7 @@
     <color name="text_green">#84A085</color>
 
     <color name="button_red">#BD1242</color>
+
     <color name="button_blue_stroke">#8044779F</color>
     <color name="button_green">#7CB297</color>
 
@@ -26,5 +27,6 @@
 
     <!--profile-->
     <color name="profile_background">#EAEAEA</color>
+    <color name="red_background">#2ABD1242</color>
 
 </resources>

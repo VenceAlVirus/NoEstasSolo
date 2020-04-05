@@ -93,3 +93,13 @@ bapp/src/main/java/com/talentoMobile/noEstasSolo/features/maps/view/adapters/Map
 Qapp/src/main/java/com/talentoMobile/noEstasSolo/features/maps/view/MapFragment.kt,8/3/8397409669e7021aa2ffdbe5d54e0243c4e01e21
 ‡
 Wapp/src/main/java/com/talentoMobile/noEstasSolo/features/maps/view/MapDetailFragment.kt,3/f/3f4652579c799b9726c4bd028681f31fa102e62b
+‰
+Yapp/src/main/java/com/talentoMobile/noEstasSolo/features/onboarding/OnBoardingFragment.kt,6/7/675249d4c23961027552b3dd1613b84c2ecd4248
+{
+Kapp/src/main/java/com/talentoMobile/noEstasSolo/features/news/models/New.kt,c/3/c393f38e4c0ecf56d1a916fe3caa857a879114dc
+•
+eapp/src/main/java/com/talentoMobile/noEstasSolo/features/messages/views/fragments/MessagesFragment.kt,6/1/61a7d54874742b6e67bc5bf3c64c813afdc136a2
+ˆ
+Xapp/src/main/java/com/talentoMobile/noEstasSolo/features/news/adapter/NewsListAdapter.kt,7/8/783d146da9b87a88fd9d2d472d943e4227e4d152
+s
+Capp/src/main/java/com/talentoMobile/noEstasSolo/core/utils/Stars.kt,8/9/89e674b47938ef45eb92a0f77764eb52eb5d0214

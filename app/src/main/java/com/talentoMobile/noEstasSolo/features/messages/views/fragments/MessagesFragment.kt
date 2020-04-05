@@ -14,7 +14,7 @@ class MessagesFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         item.setOnClickListener {
-            view.findNavController().navigate(R.id.action_messagesFragment_to_messageChatFragment)
+            //view.findNavController().navigate(R.id.action_messagesFragment_to_messageChatFragment) ¿?
         }
     }
 }

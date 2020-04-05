@@ -28,14 +28,48 @@ class MainActivity : AppCompatActivity(), PopUpDelegator {
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
             toolbar.title = when (destination.id) {
+                R.id.offerAndDemandFragment -> "Oferta y demanda"
+                R.id.newsFragment -> "Noticias"
                 else -> ""
             }
             toolbar.visibility = when (destination.id) {
                 else -> View.VISIBLE
             }
+
+            bottom_navigation.visibility = when (destination.id) {
+                R.id.onBoardingFragment -> View.GONE
+                else -> View.VISIBLE
+            }
             //Controlamos que al cambiar de fragment no siga nuestro progress activo
             if (progress.visibility == View.VISIBLE) progress.visibility = View.GONE
 
+        }
+
+        bottom_navigation.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.btnAccesibility -> {
+                    navController.navigate(R.id.action_main_to_offer_and_needed)
+                    true
+                }
+                R.id.btnEvents -> {
+                    navController.navigate(R.id.action_main_to_map)
+                    true
+                }
+                R.id.btnNews -> {
+                    navController.navigate(R.id.action_main_to_news)
+                    true
+                }
+
+                R.id.btnSpecialist -> {
+                    navController.navigate(R.id.action_main_to_chats)
+                    true
+                }
+                R.id.btnProfile -> {
+                    navController.navigate(R.id.action_main_to_profile)
+                    true
+                }
+                else -> true
+            }
         }
     }
 

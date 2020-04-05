@@ -67,5 +67,37 @@
     <string name="onboarding_desc4">Los comercios también colaboran. Haz check in en los lugares con gran afluencia a los que vayas, y si alguien se contagia, todos seréis avisados.</string>
     <string name="onboarding_desc5">Te ofrecemos noticias contrastadas para evitar fake news.</string>
 
+    <!--My profile-->
+    <string name="profile_title">Mi perfil</string>
+    <string name="profile_edit">Editar</string>
+    <string name="profile_name">Montse Álvarez</string>
+    <string name="profile_opinions">Ver 28 opiniones</string>
+    <string name="profile_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</string>
+
+    <!--My profile edit-->
+    <string name="profile_edit_title">Editar perfil</string>
+    <string name="profile_edit_save">Guardar</string>
+    <string name="profile_edit_cancel">Cancelar</string>
+    <string name="profile_edit_professional">Certificarme como profesional</string>
+    <string name="profile_edit_private_data">Datos privados</string>
+    <string name="profile_edit_change_pass">Cambiar contraseña</string>
+    <string name="profile_edit_log_out">Log out</string>
+    <string name="profile_edit_remove">Darme de baja</string>
+
+    <!--certify profile -->
+    <string name="certify_profile_title">Certificación \n profesional</string>
+    <string name="certify_profile_header">¿Qué es la certificación profesional?</string>
+    <string name="certify_profile_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Eeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+</string>
+    <string name="certify_profile_detail1">Quiero certificarme en...</string>
+    <string name="certify_profile_protocolo"> Protocolo para profesionales de la salud</string>
+    <string name="certify_profile_protocolo_detail">    Necesitaremos que cumplas estos requisitos y nos envíes esto otro al email XXX
+</string>
+
+
+
+
+
+
 
 </resources>

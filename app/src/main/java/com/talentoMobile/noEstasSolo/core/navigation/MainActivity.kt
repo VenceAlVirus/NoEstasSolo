@@ -46,7 +46,15 @@ class MainActivity : AppCompatActivity(), PopUpDelegator {
             }
 
             toolbar.visibility = when (destination.id) {
+                R.id.offerAndDemandFragment -> View.GONE
                 R.id.onBoardingFragment -> View.GONE
+                R.id.profileFragment -> View.GONE
+                R.id.editProfileFragment -> View.GONE
+                R.id.mapFragment -> View.GONE
+                R.id.newsFragment ->View.GONE
+                R.id.messagesFragment ->View.GONE
+
+
                 else -> View.VISIBLE
             }
 
@@ -83,7 +91,7 @@ class MainActivity : AppCompatActivity(), PopUpDelegator {
         }
     }
 
-    fun toolbarText(text: String) {
+    public fun toolbarText(text: String) {
         toolbar.title = text
     }
 

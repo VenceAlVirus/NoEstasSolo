@@ -150,13 +150,17 @@ class OnBoardingFragment : BaseFragment() {
             lastPosition()
         else if (positionPageSelected == 0)
             firstPosition()
-        else tvSkip.visibility = View.VISIBLE
+        else {
+            tvSkip.visibility = View.VISIBLE
+            llDots.visibility = View.VISIBLE
+        }
 
 
     }
 
     private fun firstPosition() {
         tvSkip.visibility = View.INVISIBLE
+        llDots.visibility = View.INVISIBLE
         btnStart.setText(getText(R.string.onboarding_button_next))
         btnStart.setOnClickListener {
             navigateToNext()
@@ -165,7 +169,6 @@ class OnBoardingFragment : BaseFragment() {
     }
 
     private fun lastPosition() {
-        tvSkip.visibility = View.GONE
         btnStart.setText(getText(R.string.onboarding_button_start))
         btnStart.setOnClickListener {
             navigateToStart()
@@ -188,7 +191,7 @@ class OnBoardingFragment : BaseFragment() {
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
             )
-            params.setMargins(6, 0, 6, 0)
+            params.setMargins(24, 0, 24, 0)
             llDots.addView(dots[i], params)
         }
         dots[0]!!.setImageDrawable(

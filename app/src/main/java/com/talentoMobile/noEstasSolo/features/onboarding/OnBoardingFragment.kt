@@ -20,9 +20,11 @@ class OnBoardingFragment : BaseFragment() {
     private var dotsCount = 0
     private lateinit var dots: Array<ImageView?>
 
-    private lateinit var onboardAdapter: OnBoardingAdapter
+    private lateinit var onboardAdapterText: OnBoardingAdapter
+    private lateinit var onboardAdapterImage: OnBoardingAdapter
 
     var previous_pos = 0
+    var actual_pos = 0
 
     var onBoardItems: ArrayList<OnBoardingItem> = ArrayList()
 
@@ -33,7 +35,7 @@ class OnBoardingFragment : BaseFragment() {
         loadData()
         setUpAdapter()
 
-        btnStart.setOnClickListener {
+        tvSkip.setOnClickListener {
             navigateToStart()
         }
 
@@ -48,6 +50,11 @@ class OnBoardingFragment : BaseFragment() {
             .navigate(R.id.offerAndDemandFragment, null, navOptions)
     }
 
+    private fun navigateToNext() {
+        vpImages.currentItem = actual_pos + 1
+    }
+
+
     //TO ViewModel
     private fun loadData() {
         val titleArr =
@@ -61,21 +68,58 @@ class OnBoardingFragment : BaseFragment() {
                 R.string.onboarding_desc4, R.string.onboarding_desc5
             )
 
+        val imgArr =
+            intArrayOf(
+                R.drawable.onboarding_1, R.drawable.onboarding_2, R.drawable.onboarding_3,
+                R.drawable.onboarding_4, R.drawable.onboarding_5
+            )
+
         for (i in titleArr.indices) {
             val item =
-                OnBoardingItem(resources.getString(titleArr[i]), resources.getString(descArr[i]))
+                OnBoardingItem(
+                    resources.getString(titleArr[i]),
+                    resources.getString(descArr[i]),
+                    imgArr[i]
+                )
             onBoardItems.add(item)
         }
     }
 
     private fun setUpAdapter() {
-        onboardAdapter = OnBoardingAdapter(context!!, onBoardItems)
-        vpPage.adapter = onboardAdapter
-        vpPage.currentItem = 0
 
-        vpPage.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+        firstPosition()
+
+        onboardAdapterText = OnBoardingAdapter(context!!, onBoardItems, false)
+        onboardAdapterImage = OnBoardingAdapter(context!!, onBoardItems, true)
+
+        vpText.adapter = onboardAdapterText
+        vpText.currentItem = 0
+
+        vpImages.adapter = onboardAdapterImage
+        vpImages.currentItem = 0
+
+        vpImages.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageSelected(position: Int) {
+                actual_pos = position
                 changeCurrentPosition(position)
+                vpText.currentItem = position
+            }
+
+            override fun onPageScrollStateChanged(state: Int) {}
+
+            override fun onPageScrolled(
+                position: Int,
+                positionOffset: Float,
+                positionOffsetPixels: Int
+            ) {
+            }
+        })
+
+        vpText.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+            override fun onPageSelected(position: Int) {
+                actual_pos = position
+                changeCurrentPosition(position)
+                vpImages.currentItem = position
             }
 
             override fun onPageScrollStateChanged(state: Int) {}
@@ -102,10 +146,37 @@ class OnBoardingFragment : BaseFragment() {
             ContextCompat.getDrawable(context!!, R.drawable.selected_item_dot)
         )
         previous_pos = positionPageSelected + 1
+        if (positionPageSelected == onBoardItems.size - 1)
+            lastPosition()
+        else if (positionPageSelected == 0)
+            firstPosition()
+        else {
+            tvSkip.visibility = View.VISIBLE
+            llDots.visibility = View.VISIBLE
+        }
+
+
+    }
+
+    private fun firstPosition() {
+        tvSkip.visibility = View.INVISIBLE
+        llDots.visibility = View.INVISIBLE
+        btnStart.setText(getText(R.string.onboarding_button_next))
+        btnStart.setOnClickListener {
+            navigateToNext()
+        }
+
+    }
+
+    private fun lastPosition() {
+        btnStart.setText(getText(R.string.onboarding_button_start))
+        btnStart.setOnClickListener {
+            navigateToStart()
+        }
     }
 
     private fun setUiPageViewController() {
-        dotsCount = onboardAdapter.getCount()
+        dotsCount = onboardAdapterText.getCount()
         dots = arrayOfNulls(dotsCount)
         for (i in 0 until dotsCount) {
             dots[i] = ImageView(context)
@@ -120,8 +191,8 @@ class OnBoardingFragment : BaseFragment() {
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
             )
-            params.setMargins(6, 0, 6, 0)
-            llCountDots.addView(dots[i], params)
+            params.setMargins(24, 0, 24, 0)
+            llDots.addView(dots[i], params)
         }
         dots[0]!!.setImageDrawable(
             ContextCompat.getDrawable(

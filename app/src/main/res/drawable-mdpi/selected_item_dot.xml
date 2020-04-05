@@ -8,5 +8,5 @@
         android:width="@dimen/pager_dot_size"
         android:height="@dimen/pager_dot_size" />
 
-    <solid android:color="#3A4A53" />
+    <solid android:color="@color/dot_selected" />
 </shape>

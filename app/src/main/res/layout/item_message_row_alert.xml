@@ -7,7 +7,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cvNew"
-        style="@style/Widget.MaterialComponents.CardView"
+        style="@style/cardAlert"
         android:layout_width="match_parent"
         android:layout_height="151dp"
         android:layout_margin="10dp"
@@ -25,10 +25,9 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp">
 
-
             <TextView
                 android:id="@+id/tvTitle"
-                style="@style/text.text_gray.blod"
+                style="@style/textHeaderRed"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -37,13 +36,14 @@
                 android:maxLines="1"
                 android:text="Nuevo caso detectado"
                 android:textColor="@color/text_red"
+                android:textSize="@dimen/text_size_16"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tvSubtitle"
-                style="@style/text.text_gray"
+                style="@style/textDetail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

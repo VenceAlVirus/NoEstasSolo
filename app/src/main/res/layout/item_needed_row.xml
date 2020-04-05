@@ -56,7 +56,7 @@
                 android:drawableLeft="@drawable/ic_person"
                 android:drawablePadding="16dp"
                 android:text="Profesional"
-                android:textColor="@color/button_red"
+                android:textColor="@color/button_green"
                 app:layout_constraintBottom_toTopOf="@id/tvDate"
                 app:layout_constraintLeft_toRightOf="@id/gl3v"
                 app:layout_constraintRight_toRightOf="parent"

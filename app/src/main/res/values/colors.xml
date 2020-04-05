@@ -14,15 +14,23 @@
     <color name="text_gray">#525A74</color>
     <color name="text_white">#FFFFFF</color>
     <color name="text_green">#84A085</color>
+    <color name="text_blue">#44779F</color>
 
 
-    <color name="button_red">#6CA385</color>
+
+
+    <color name="button_red">#BD1242</color>
+
     <color name="button_blue_stroke">#8044779F</color>
+    <color name="button_green">#7CB297</color>
 
+    <color name="dot_selected">#45779F</color>
+    <color name="dot">#B4D0E6</color>
+
+    <color name="onBoardingBackground">#FFFDFD</color>
 
     <!--profile-->
     <color name="profile_background">#EAEAEA</color>
     <color name="red_background">#2ABD1242</color>
-
 
 </resources>

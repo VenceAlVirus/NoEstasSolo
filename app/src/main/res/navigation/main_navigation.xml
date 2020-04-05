@@ -3,20 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/perfilFragment">
+    app:startDestination="@id/onBoardingFragment">
 
     <fragment
-        android:id="@+id/perfilFragment"
-        android:name="com.talentoMobile.noEstasSolo.features.perfil.views.ProfileFragment"
-        android:label="PerfilFragment">
+        android:id="@+id/onBoardingFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.onboarding.OnBoardingFragment"
+        android:label="OnBoardingFragment"
+        tools:layout="@layout/fragment_onboarding">
         <action
-            android:id="@+id/action_perfilFragment_to_editProfileFragment"
-            app:destination="@id/editProfileFragment" />
+            android:id="@+id/action_onBoardingFragment_to_offerAndDemandFragment"
+            app:destination="@id/offerAndDemandFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/editProfileFragment"
-        android:name="com.talentoMobile.noEstasSolo.features.perfil.views.EditProfileFragment"
-        android:label="EditProfileFragment" />
 
     <fragment
         android:id="@+id/offerAndDemandFragment"
@@ -62,30 +59,58 @@
 
         <action
             android:id="@+id/action_newsFragment_to_newFragment"
-            app:destination="@id/newsFragment" />
+            app:destination="@id/newFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/onBoardingFragment"
-        android:name="com.talentoMobile.noEstasSolo.features.onboarding.OnBoardingFragment"
-        android:label="OnBoardingFragment" />
+        android:id="@+id/newFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.news.views.NewDetailFragment"
+        android:label="NewFragment"
+        tools:layout="@layout/fragment_new_detail" />
+
+    <fragment android:id="@+id/mapFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.maps.view.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_map"/>
 
     <fragment
-        android:id="@+id/messagesFragment"
-        android:name="com.talentoMobile.noEstasSolo.features.messages.views.fragments.MessagesFragment"
-        android:label="MessagesFragment"
-        tools:layout="@layout/fragment_messages">
-
-        <action
-            android:id="@+id/action_messagesFragment_to_messageChatFragment"
-            app:destination="@id/chatFragment" />
-    </fragment>
-
-
-    <fragment
-        android:id="@+id/chatFragment"
+        android:id="@+id/chatsFragment"
         android:name="com.talentoMobile.noEstasSolo.features.chat.views.fragments.ChatFragment"
         android:label="ChatFragment"
-        tools:layout="@layout/fragment_chat" />
+        tools:layout="@layout/fragment_chat"/>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.perfil.views.ProfileFragment"
+        android:label="PerfilFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_perfilFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
 
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.perfil.views.EditProfileFragment"
+        android:label="EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile"/>
+
+    <action
+        android:id="@+id/action_main_to_offer_and_needed"
+        app:destination="@id/offerAndDemandFragment"/>
+
+    <action
+        android:id="@+id/action_main_to_map"
+        app:destination="@id/mapFragment"/>
+
+    <action
+        android:id="@+id/action_main_to_news"
+        app:destination="@id/newsFragment"/>
+
+    <action
+        android:id="@+id/action_main_to_chats"
+        app:destination="@id/chatsFragment"/>
+
+    <action
+        android:id="@+id/action_main_to_profile"
+        app:destination="@id/profileFragment"/>
 </navigation>

@@ -137,4 +137,7 @@ dependencies {
 
     // Google Maps
     implementation 'com.google.android.gms:play-services-maps:16.0.0'
+
+    // Permissions implementation
+    implementation 'ru.superjob:kotlin-permissions:1.0.3'
 }

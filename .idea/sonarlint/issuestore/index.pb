@@ -91,3 +91,5 @@ lapp/src/main/java/com/talentoMobile/noEstasSolo/features/offerAndDemand/views/a
 bapp/src/main/java/com/talentoMobile/noEstasSolo/features/maps/view/adapters/MapViewPagerAdapter.kt,4/b/4b9f00af83e575f9b4dcaacf2fb6e4a52821d328
 Å
 Qapp/src/main/java/com/talentoMobile/noEstasSolo/features/maps/view/MapFragment.kt,8/3/8397409669e7021aa2ffdbe5d54e0243c4e01e21
+á
+Wapp/src/main/java/com/talentoMobile/noEstasSolo/features/maps/view/MapDetailFragment.kt,3/f/3f4652579c799b9726c4bd028681f31fa102e62b

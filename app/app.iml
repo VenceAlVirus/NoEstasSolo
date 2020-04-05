@@ -72,8 +72,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/kapt/PreproductionDebug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/ap_generated_sources/PreproductionDebug/out" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/Preproduction/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/PreproductionDebug/compilePreproductionDebugAidl/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/Preproduction/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/PreproductionDebug/compilePreproductionDebugRenderscript/out" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/kaptKotlin/PreproductionDebug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/google-services/Preproduction/debug" type="java-resource" generated="true" />
@@ -86,11 +86,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/PreproductionDebug/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/PreproductionDebug/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/PreproductionDebug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/PreproductionDebugAndroidTest/compilePreproductionDebugAndroidTestRenderscript/out" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/ap_generated_sources/PreproductionDebugAndroidTest/out" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/Preproduction/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/PreproductionDebugAndroidTest/compilePreproductionDebugAndroidTestAidl/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/kapt/PreproductionDebugAndroidTest" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/ap_generated_sources/PreproductionDebugAndroidTest/out" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/aidl_source_output_dir/PreproductionDebugAndroidTest/compilePreproductionDebugAndroidTestAidl/out" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/Preproduction/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/renderscript_source_output_dir/PreproductionDebugAndroidTest/compilePreproductionDebugAndroidTestRenderscript/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/Preproduction/debug" type="java-test-resource" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/Preproduction/debug" type="java-test-resource" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestPreproductionDebug/res" type="java-test-resource" />
@@ -100,8 +100,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestPreproductionDebug/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestPreproductionDebug/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestPreproductionDebug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/ap_generated_sources/PreproductionDebugUnitTest/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/kapt/PreproductionDebugUnitTest" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/ap_generated_sources/PreproductionDebugUnitTest/out" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testPreproductionDebug/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testPreproductionDebug/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testPreproductionDebug/assets" type="java-test-resource" />
@@ -179,16 +179,16 @@
     <orderEntry type="module-library">
       <library name="Gradle: kaptGeneratedClasses">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/ProductionDebugAndroidTest" />
-          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/ProductionRelease" />
-          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/PreproductionRelease" />
-          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/PreproductionDebugUnitTest" />
-          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/PreproductionReleaseUnitTest" />
-          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/ProductionReleaseUnitTest" />
+          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/PreproductionDebugAndroidTest" />
           <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/PreproductionDebug" />
+          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/PreproductionDebugUnitTest" />
+          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/PreproductionRelease" />
+          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/PreproductionReleaseUnitTest" />
+          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/ProductionDebugAndroidTest" />
           <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/ProductionDebug" />
           <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/ProductionDebugUnitTest" />
-          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/PreproductionDebugAndroidTest" />
+          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/ProductionRelease" />
+          <root url="file://$MODULE_DIR$/build/tmp/kapt3/classes/ProductionReleaseUnitTest" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

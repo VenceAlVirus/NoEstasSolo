@@ -60,7 +60,7 @@ class NeededFragment : BaseFragment() {
                     "Madrid, Madrid",
                     Random.nextBoolean(),
                     filterList[(0..4).random()].filterName,
-                    lorem.getParagraphs(1, 2)
+                    lorem.getParagraphs(1, 3)
                 )
             )
         }

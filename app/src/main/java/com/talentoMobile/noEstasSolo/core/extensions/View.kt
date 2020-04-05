@@ -1,4 +1,4 @@
-package com.davidups.starwars.core.extensions
+package com.talentoMobile.noEstasSolo.core.extensions
 
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable

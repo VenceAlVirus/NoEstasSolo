@@ -1,70 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
 
-    <ImageView
-        style="@style/autoAdjustImageView"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:src="@drawable/new_banner"
-        app:layout_constraintBottom_toTopOf="@id/glh3"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/gl3h"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivNewDetail"
+                    style="@style/autoAdjustImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvSource"
+                style="@style/subTitle.text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/gl3h"
+                tools:text="Promotor" />
+
+            <TextView
+                android:id="@+id/tvInformation"
+                style="@style/text.text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toTopOf="@id/tvDate"
+                app:layout_constraintTop_toBottomOf="@id/tvSource"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. " />
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/text.text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="16dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@id/btnOpenWeb"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:text="19 de diciembre de 2019, 17:00h" />
 
 
-    <TextView
-        android:id="@+id/tvTitle"
-        style="@style/text.text_gray"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Fuente"
-        app:layout_constraintBottom_toTopOf="@id/tvNewDetail"
-        app:layout_constraintTop_toBottomOf="@id/glh3" />
-
-
-    <TextView
-        android:id="@+id/tvNewDetail"
-        style="@style/text.text_gray"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:text="@string/loremp_long"
-        app:layout_constraintBottom_toTopOf="@id/tvDate"
-        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
-
-
-    <TextView
-        android:id="@+id/tvDate"
-        style="@style/text.text_gray"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:drawableLeft="@drawable/ic_date"
-        android:gravity="center"
-        android:text="19 de diciembre de 2019, 17:00h"
-        app:layout_constraintBottom_toTopOf="@id/btnOpenweb"
-        app:layout_constraintTop_toBottomOf="@id/tvNewDetail" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnOpenweb"
-        style="@style/button.red"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Visitar página web"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glh3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".3" />
-
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenWeb"
+                style="@style/button.red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visitar página web"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

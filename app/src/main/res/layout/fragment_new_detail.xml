@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/gl3h"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/ivNewDetail"
+                    style="@style/autoAdjustImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvSource"
+                style="@style/subTitle.text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/gl3h"
+                tools:text="Promotor" />
+
+            <TextView
+                android:id="@+id/tvInformation"
+                style="@style/text.text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@id/tvDate"
+                app:layout_constraintTop_toBottomOf="@id/tvSource"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. " />
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/text.text_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="16dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@id/btnOpenWeb"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:text="19 de diciembre de 2019, 17:00h" />
+
+            <LinearLayout
+                android:id="@+id/llFooter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="@dimen/size_30"
+                android:layout_marginEnd="@dimen/size_30"
+                android:layout_marginBottom="@dimen/size_30"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOpenWeb"
+                    style="@style/button.green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visitar página web" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

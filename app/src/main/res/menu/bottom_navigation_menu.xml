@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btnAccesibility"
+        android:title="Comunidad"
+        android:icon="@drawable/ic_measurement" />
+
+    <item
+        android:id="@+id/btnEvents"
+        android:title="Mapa"
+        android:icon="@drawable/ic_pin_drop" />
+
+    <item
+        android:id="@+id/btnNews"
+        android:title="Noticias"
+        android:icon="@drawable/ic_news" />
+
+    <item
+        android:id="@+id/btnSpecialist"
+        android:title="Mensajes"
+        android:icon="@drawable/ic_forum" />
+
+    <item
+        android:id="@+id/btnProfile"
+        android:title="Perfil"
+        android:icon="@drawable/ic_profile" />
+</menu>

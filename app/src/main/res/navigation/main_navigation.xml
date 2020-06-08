@@ -3,112 +3,129 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/startFragment">
+    app:startDestination="@id/onBoardingFragment">
 
     <fragment
-        android:id="@+id/startFragment"
-        android:name="com.talentoMobile.fundacionMutuaDePropietarios.features.login.views.StartFragment"
-        android:label="StartFragment"
-        tools:layout="@layout/fragment_start">
-
+        android:id="@+id/onBoardingFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.onboarding.OnBoardingFragment"
+        android:label="OnBoardingFragment"
+        tools:layout="@layout/fragment_onboarding">
         <action
-            android:id="@+id/action_startFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_onBoardingFragment_to_offerAndDemandFragment"
+            app:destination="@id/offerAndDemandFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.talentoMobile.fundacionMutuaDePropietarios.features.login.views.LogInFragment"
-        android:label="LoginFragment"
-        tools:layout="@layout/fragment_login">
+        android:id="@+id/offerAndDemandFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.offerAndDemand.views.OfferAndDemandFragment"
+        android:label="OfferAndDemand"
+        tools:layout="@layout/fragment_offer_and_demand">
 
         <action
-            android:id="@+id/action_loginFragment_to_forgot_my_password"
-            app:destination="@id/forgotMyPassword" />
+            android:id="@+id/action_offerAndDemandFragment_to_OfferFragment"
+            app:destination="@id/offerFragment" />
         <action
-            android:id="@+id/action_loginFragment_to_signIn"
-            app:destination="@id/singInFragment" />
-
+            android:id="@+id/action_offerAndDemandFragment_to_NeededFragment"
+            app:destination="@id/neededFragment" />
+        <action
+            android:id="@+id/action_offerAndDemandFragment_to_ProductDetail"
+            app:destination="@id/productDetail" />
     </fragment>
 
     <fragment
-        android:id="@+id/forgotMyPassword"
-        android:name="com.talentoMobile.fundacionMutuaDePropietarios.features.login.views.ForgotMyPasswordFragment"
-        android:label="ForgotMyPassword"
-        tools:layout="@layout/fragment_forgot_my_password">
+        android:id="@+id/neededFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.offerAndDemand.views.NeededFragment"
+        android:label="NeededFragment"
+        tools:layout="@layout/fragment_needed" />
+
+    <fragment
+        android:id="@+id/offerFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.offerAndDemand.views.OfferFragment"
+        android:label="OfferFragment"
+        tools:layout="@layout/fragment_offer" />
+
+    <fragment
+        android:id="@+id/productDetail"
+        android:name="com.talentoMobile.noEstasSolo.features.offerAndDemand.views.ProductDetailFragment"
+        android:label="ProductDetail"
+        tools:layout="@layout/fragment_product_detail_fragment" />
+
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.news.views.NewsFragments"
+        android:label="NewsFragment"
+        tools:layout="@layout/fragment_news">
 
         <action
-            android:id="@+id/action_forgot_my_password_to_login_fragment"
-            app:destination="@id/loginFragment" />
-
+            android:id="@+id/action_newsFragment_to_newFragment"
+            app:destination="@id/newFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/singInFragment"
-        android:name="com.talentoMobile.fundacionMutuaDePropietarios.features.signIn.views.SignInFragment"
-        android:label="SignInFragment"
-        tools:layout="@layout/fragment_sing_in">
+        android:id="@+id/newFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.news.views.NewDetailFragment"
+        android:label="NewFragment"
+        tools:layout="@layout/fragment_new_detail" />
 
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.maps.view.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.messages.views.fragments.MessagesFragment"
+        android:label="MessagesFragment"
+        tools:layout="@layout/fragment_messages">
         <action
-            android:id="@+id/action_signin_to_email_code_fragment"
-            app:destination="@id/emailCodeSignIn" />
+            android:id="@+id/action_messagesFragment_to_messageChatFragment"
+            app:destination="@+id/chatsFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/emailCodeSignIn"
-        android:name="com.talentoMobile.fundacionMutuaDePropietarios.features.signIn.views.SignInEmailCodeFragment"
-        android:label="EmailCodeSignIn"
-        tools:layout="@layout/fragment_email_code_signin">
-
+        android:id="@+id/chatsFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.chat.views.fragments.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.perfil.views.ProfileFragment"
+        android:label="PerfilFragment"
+        tools:layout="@layout/fragment_profile">
         <action
-            android:id="@+id/action_email_code_fragment_to_presentation_fragment"
-            app:destination="@id/presentationSignIn" />
-
+            android:id="@+id/action_perfilFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
     </fragment>
 
     <fragment
-        android:id="@+id/presentationSignIn"
-        android:name="com.talentoMobile.fundacionMutuaDePropietarios.features.signIn.views.SignInIntroduceFragment"
-        android:label="PresentationSignIn"
-        tools:layout="@layout/fragment_introduce_signin">
+        android:id="@+id/editProfileFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.perfil.views.EditProfileFragment"
+        android:label="EditProfileFragment"
+        tools:layout="@layout/fragment_edit_profile" />
 
-        <action
-            android:id="@+id/action_presentation_fragment_to_add_contact_fragment"
-            app:destination="@id/contactSignIn" />
-    </fragment>
+    <action
+        android:id="@+id/action_main_to_offer_and_needed"
+        app:destination="@id/offerAndDemandFragment" />
 
+    <action
+        android:id="@+id/action_main_to_map"
+        app:destination="@id/mapFragment" />
+
+    <action
+        android:id="@+id/action_main_to_news"
+        app:destination="@id/newsFragment" />
+
+    <action
+        android:id="@+id/action_main_to_messages"
+        app:destination="@id/messagesFragment" />
+
+    <action
+        android:id="@+id/action_main_to_profile"
+        app:destination="@id/profileFragment" />
     <fragment
-        android:id="@+id/contactSignIn"
-        android:name="com.talentoMobile.fundacionMutuaDePropietarios.features.signIn.views.SignInAddContactFragment"
-        android:label="AddContactSignIn"
-        tools:layout="@layout/fragment_add_contact_signin">
-
-        <action
-            android:id="@+id/action_contact_fragment_to_wellcome_fragment"
-            app:destination="@id/wellcomeSingIn"/>
-    </fragment>
-
-    <fragment
-        android:id="@+id/wellcomeSingIn"
-        android:name="com.talentoMobile.fundacionMutuaDePropietarios.features.signIn.views.SignInWellcomeFragment"
-        android:label="WellcomeSignIn"
-        tools:layout="@layout/fragment_wellcome_singin">
-
-    </fragment>
-
-    <fragment
-        android:id="@+id/peopleFragment"
-        android:name="com.davidups.starwars.features.people.views.fragments.PeopleFragment"
-        android:label="PeopleFragment"
-        tools:layout="@layout/fragment_people">
-        <action
-            android:id="@+id/action_peopleFragment_to_personFragment"
-            app:destination="@id/personFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/personFragment"
-        android:name="com.davidups.starwars.features.people.views.fragments.PersonFragment"
-        android:label="PersonFragment"
-        tools:layout="@layout/fragment_person_detail" />
+        android:id="@+id/certifyProfileFragment"
+        android:name="com.talentoMobile.noEstasSolo.features.perfil.views.CertifyProfileFragment"
+        android:label="CertifyProfileFragment" />
 </navigation>

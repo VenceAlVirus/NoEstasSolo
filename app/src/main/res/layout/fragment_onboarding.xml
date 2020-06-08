@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSkip"
+        style="@style/textMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_24"
+        android:layout_marginEnd="@dimen/size_24"
+        android:text="@string/onboarding_button_skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpImages"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/vpImages_height"
+        android:layout_marginTop="@dimen/size_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSkip" />
+
+    <LinearLayout
+        android:id="@+id/llDots"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/llDots_height"
+        android:layout_marginTop="@dimen/size_18"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vpImages" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/size_18"
+        android:layout_marginBottom="@dimen/size_18"
+        app:layout_constraintBottom_toTopOf="@+id/llFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llDots" />
+
+    <LinearLayout
+        android:id="@+id/llFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_30"
+        android:layout_marginEnd="@dimen/size_30"
+        android:layout_marginBottom="@dimen/size_30"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStart"
+            style="@style/button.green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/onboarding_button_start" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

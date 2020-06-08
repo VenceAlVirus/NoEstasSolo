@@ -1,51 +1,10 @@
 <resources>
-    <string name="app_name">Fundacion Mutua De Propietarios</string>
+    <string name="app_name">Estamos Juntos</string>
     <string name="failure_server_error">Server Error</string>
     <string name="Retry">Reintentar</string>
     <string name="Cancel">Cancelar</string>
     <string name="generic_error_title">Upsss!</string>
     <string name="generic_error_body">Parece que tenemos problemas, estamos trabajando para solucionarlo. Por favor, vuelve a intentarlo más tarde.</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="ver_m_s">Ver más</string>
-    <string name="zero">ZERO</string>
-    <string name="barriers">BARRERAS</string>
-    <string name="start_info">Tú app para medir la accesiblidad de los edificios de tu entorno</string>
-    <string name="start">Comenzar</string>
-    <string name="enter">Entrar</string>
-    <string name="forgot_my_password">Olvidé mi contraseña</string>
-    <string name="login_informative_text">¿No has estado aquí antes?</string>
-    <string name="registry">Regístrate</string>
-    <string name="email_required">EMAIL*</string>
-    <string name="password_required">CONTRASEÑA*</string>
-    <string name="password_required_repeat">REPETIR CONTRASEÑA*</string>
-    <string name="send_mail">Enviar email</string>
-    <string name="forgot_my_password_fragment_forgote_your_password">¿Olvidaste tú contraseña?</string>
-    <string name="have_an_email">¡Tienes un email!</string>
-    <string name="forgot_my_password_fragment_banner_one">Introduce tu e-mail y te enviaremos una clave para recuperarla</string>
-    <string name="forgot_my_password_fragment_banner_two">Introduce la clave que te hemos enviado</string>
-    <string name="code">Código</string>
-    <string name="save_password">Guardar contraseña</string>
-    <string name="choose_new_password">Elige tú nueva contraseña</string>
-    <string name="forgot_my_password_fragment_banner_three">Recuerda que debe tener al menos 6 caracteres</string>
-    <string name="registry_for_start">Regístrate para empezar</string>
-    <string name="signin_code_banner_text">Introduce la clave que te hemos enviado</string>
-    <string name="user_name_required">NOMBRE DE USUARIO*</string>
-    <string name="save">Guardar</string>
-    <string name="How_do_you_want_to_introduce">¿Cómo quieres presentarte?</string>
-    <string name="introduce_banner">Así te verán los demás en el foro y en las mediciones que realices</string>
-    <string name="name">NOMBRE</string>
-    <string name="surname">PRIMER APELLIDO</string>
-    <string name="second_surname">SEGUNDO APELLIDO</string>
-    <string name="telephone">TELÉFONO</string>
-    <string name="skip">Omitir</string>
-    <string name="contact_signin_banner_text">Estos datos no los verán los demás usuarios</string>
-    <string name="wellcome">¡Te damos \n la bienvenida!</string>
-    <string name="wellcome_text">Aquí compartiremos las valoraciones de accesibilidad de los edificios que nos rodean. \n \n   Además de esto, ¿has llegado aquí a través de algún grupo? Si es así, es posible que te hayan dado un código de acceso.</string>
-    <string name="have_a_code">Tengo un código</string>
-    <string name="see_groups">Ver grupos</string>
-
 
     <string name="loremp_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla, ligula feugiat scelerisque lacinia, libero ipsum tincidunt augue, in posuere enim erat id libero. Duis ultricies orci vitae orci bibendum feugiat. Nunc malesuada, velit eu interdum efficitur, purus eros euismod ipsum, a ultrices massa diam vitae lectus. Aliquam sed tincidunt est. Proin sit amet risus tincidunt, commodo enim ac, euismod mauris. Etiam vel nisi lacinia, hendrerit sapien non, pulvinar tortor. Morbi sit amet orci id orci laoreet tristique in eu massa. Nunc vestibulum interdum nibh, quis pellentesque libero sagittis at. Aliquam cursus tincidunt aliquam. Etiam vulputate metus ut lacus congue dapibus. Sed gravida congue libero, vitae vulputate diam venenatis ac. Sed pulvinar gravida lacinia.</string>
 
